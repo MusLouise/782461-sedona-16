@@ -10,7 +10,6 @@
       <img class="page-header__logo-image" src="img/" width="" height="" alt="Туристический городок - Седона">
     </a>
     <nav class="main-nav">
-      <span class="close-button"></span>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -27,7 +26,7 @@
           </li>
         </ul>
       </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--cross" type="button">Открыть меню</button>
     </nav>
   </header>
 
@@ -39,14 +38,16 @@
       <header class="features__header">
         <h2 class="visually-hidden">Особенности города</h2>
         <b class="features__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p class="features-intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </header>
       <ul class="features__list">
-        <li class="features__item features__item-main">
+        <li class="features__item features__item--main">
           <h3 class="features__title">Настоящий городок</h3>
           <p class="features__number">№1</p>
           <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img class="features__image" src="img/" width="" height="" alt="Настоящий городок">
+          <a class="features__image-link">
+            <img class="features__image" src="img/" width="" height="" alt="Настоящий городок">
+          </a>
           <ul class="recommendations">
             <li class="recommendations__item recommendations__item-accommodation">
               <h4 class="recommendations__title">Жилье</h4>
@@ -62,11 +63,13 @@
             </li>
           </ul>
         </li>
-        <li class="features__item features__item-main">
+        <li class="features__item features__item--main">
           <h3 class="features__title">Там есть мост Дьявола</h3>
           <p class="features__number">№2</p>
           <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <i class="features__image" src="img/" width="" height="" alt="Мост дьявола">
+          <a class="features__image-link">
+            <img class="features__image" src="img/" width="" height="" alt="Мост дьявола">
+          </a>
         </li>
         <li class="features__item">
           <h3 class="features__title">Небольшая площадь</h3>
@@ -90,7 +93,7 @@
         <h2 class="visually-hidden">Выбор гостиницы</h2>
         <b class="hotel-chose__slogan">Заинтересовались?</b>
         <p class="hotel-chose__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="hotel-chose__button">Найти гостиницу</button>
+        <a href="hotels.html" class="hotel-chose_button button">Найти гостиницу</a>
         <a class="hotel-chose__map">
           <img class="hotel-chose__map-image" src="img/" width="" height="" alt="Карта города Седона">
         </a>
@@ -104,20 +107,26 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#"></a>
+              <a class="social__link social__link--twitter" href="#">
+                <p class="visually-hidden">Мы в Твиттере</p>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"></a>
+              <a class="social__link social__link--facebook" href="#">
+                <p class="visually-hidden">Мы в Фейсбуке</p>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="#"></a>
+              <a class="social__link social__link--youtube" href="#">
+                <p class="visually-hidden">Мы на Ютубе</p>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright_image"src="img/" width="" height="" alt="HTML Academy">
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright_image" src="img/" width="" height="" alt="HTML Academy">
           </a>
         </div>
       </div>
