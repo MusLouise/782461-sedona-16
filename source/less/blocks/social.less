@@ -1,0 +1,30 @@
+.social__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-left: 2px;
+  margin-right: 4px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    fill-opacity: 0.3;
+  }
+}
