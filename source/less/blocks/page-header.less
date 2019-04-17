@@ -1,0 +1,36 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  height: 56px;
+  margin: 0 auto;
+
+  background-color: white;
+  box-shadow: 0 -4px 10px -2px rgba(0, 1, 1, 0.2);
+}
+
+.page-header__logo {
+  position: absolute;
+  width: 101px;
+  height: 83px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    order: 2;
+    height: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 96px;
+  }
+}
