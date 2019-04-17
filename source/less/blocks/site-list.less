@@ -9,16 +9,6 @@
   &:first-child {
     border-top: none;
   }
-
-  &:hover,
-  &:focus {
-    background-color: @mobile-menu-hover;
-  }
-
-  &:active {
-    color: @color-menu-active;
-    background-color: @mobile-menu-active;
-  }
 }
 
 .site-list__link {
@@ -34,6 +24,16 @@
   text-transform: uppercase;
   text-align: center;
   background-color: @background-color-menu;
+
+  &:hover,
+  &:focus {
+    background-color: @mobile-menu-hover;
+  }
+
+  &:active {
+    color: @color-menu-active;
+    background-color: @mobile-menu-active;
+  }
 }
 
 .site-list__link--active {
