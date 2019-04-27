@@ -7,13 +7,15 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-transform: uppercase;
   color: @color-features-slogan;
 }
 
 .features__intro {
-  margin: 23px 0 0;
+  margin-top: 23px;
   padding: 0;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .features__list {
@@ -49,10 +51,16 @@
 }
 
 .features__item {
-  padding: 25px 15px 27px;
+  padding: 25px 0 27px;
   border-bottom: 1px solid @border-color-features;
 
   &:last-child {
     border-bottom: none;
   }
+}
+
+.features__image-link img {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
 }

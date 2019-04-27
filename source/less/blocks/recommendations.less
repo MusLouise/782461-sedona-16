@@ -1,48 +1,64 @@
 .recommendations {
   .list-reset;
-  padding: 41px 41px 42px 69px;
   display: flex;
   flex-direction: column;
-
-  text-align: left;
-
+  align-items: center;
   background-color: @background-color-recommendations;
 }
 
 .recommendations__item {
   position: relative;
+  padding-left: 70px;
+  padding-bottom: 38px;
 }
 
 .recommendations__title {
-  margin: 0;
+  max-width: 320px;
+  margin: 0 auto;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: @color-black;
+  text-align: left;
+}
+
+.recommendations__item--accommodation {
+  padding-right: 41px;
 }
 
 .recommendations__item--accommodation::before {
   content: "";
   position: absolute;
+  right: 260px;
   width: 40px;
   height: 38px;
   background-image: url("../img/icon-house.svg");
   background-size: 39px 37px;
 }
 
+.recommendations__item--souvenirs {
+  padding-right: 51px;
+}
+
 .recommendations__item--souvenirs::before {
   content: "";
   position: absolute;
+  right: 260px;
   width: 40px;
   height: 38px;
   background: url("../img/icon-gift.svg") no-repeat;
   background-size: 32px 38px;
 }
 
+.recommendations__item--food {
+  padding-right: 70px;
+}
+
 .recommendations__item--food::before {
   content: "";
   position: absolute;
+  right: 260px;
   width: 40px;
   height: 38px;
   background: url("../img/icon-burger.svg") no-repeat;
@@ -50,7 +66,9 @@
 }
 
 .recommendations__description {
-  margin-bottom: 29px;
-
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
   color: @color-recommendations;
+  text-align: left;
 }
