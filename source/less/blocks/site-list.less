@@ -46,14 +46,36 @@
 @media (min-width: @tablet-width) {
   .site-list__item {
     border: none;
-  }
 
-  &:nth-child(2) {
-    margin-right: 110px;
+    &:first-child .site-list__link {
+      padding: 22px 48px 23px 49px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 78px;
+
+      .site-list__link {
+        padding: 22px 26px 22px 29px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-left: 78px;
+
+      .site-list__link {
+        padding: 22px 21px 23px 27px;
+      }
+    }
+
+    &:nth-child(4) .site-list__link {
+      padding: 22px 26px 23px 28px;
+    }
   }
 
   .site-list__link {
     font-size: 14px;
     line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
   }
 }
