@@ -4,7 +4,6 @@
 }
 
 .user-contact__input {
-  .placeholder;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
@@ -22,6 +21,11 @@
   &:focus {
     border-color: @color-form-input--active;
     background-color: transparent;
+  }
+
+  &[placeholder] {
+    color: @font-color--input;
+    opacity: 1;
   }
 }
 

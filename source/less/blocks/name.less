@@ -15,7 +15,8 @@
 }
 
 .name__input {
-  .placeholder;
+  display: block;
+  box-sizing: border-box;
   flex-grow: 1;
   flex-shrink: 1;
   height: 58px;
@@ -37,6 +38,11 @@
   &:focus {
     border-color: @color-form-input--active;
     background-color: transparent;
+  }
+
+  &[placeholder] {
+    color: @font-color--input;
+    opacity: 1;
   }
 }
 
