@@ -7,7 +7,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 320px;
   height: 56px;
   margin: 0 auto;
 
@@ -24,8 +23,12 @@
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    order: 2;
     height: 83px;
+    top: -57px;
+  }
+
+  .page-header__menu-btn {
+    display: none;
   }
 }
 

@@ -1,0 +1,27 @@
+.attraction {
+}
+
+.attraction__list {
+  .list-reset;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.attraction__label {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  color: @font-color--input;
+}
+
+@media (min-width: @tablet-width) {
+  .attraction__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
